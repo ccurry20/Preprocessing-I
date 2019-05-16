@@ -57,3 +57,145 @@ html, body {
     height: 100%;
 }
 
+@link-color:        #428bca; // sea blue
+@link-color-hover:  darken(@link-color, 10%);
+@font-color: darkgray; 
+@font-type: Arial; 
+
+/* Your code starts here! */
+.container {
+	width: 900px; 
+	margin: auto;
+
+	@media (max-width: 500px) {
+		width: 100%;
+		
+	} 	
+}
+  
+header nav {
+ display: flex;
+  margin-top: 35px;
+ 
+  @media (max-width: 500px) {
+	display: flex; 
+	flex-direction: column; 
+ 
+}
+}
+
+.logo {
+	margin-left:650px;
+	display: flex;
+	margin-top: -50px;
+
+	
+}
+
+header nav a {
+	margin: 20px; 
+	color: @link-color;
+}
+
+
+
+.sub img{
+display: flex;
+margin-left: 30%;
+    margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+
+.my-mixin {
+	display: flex;
+}
+.sub h1 {
+	font-family: @font-type;
+    letter-spacing: 1px;
+	.my-mixin(); 
+	margin-top: 30px;
+	font-size: 60px;
+	text-align: center;
+	margin-left: 100px;
+	margin-top:100px;
+	color: @link-color;
+}
+
+.sub h3 {
+
+	.my-mixin(); 	
+	font-family:@font-type;
+	margin-left: 15%;
+	padding: 5px 5px 5px;
+	width: 80%; 
+	margin-bottom: 3%;
+}
+
+.line {
+	border-bottom: 1px solid;
+	width: 100%;
+	margin-left: 3%; 
+}
+
+.one h6 {
+	
+	font-family: @font-type;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	margin-top: 20px; 
+	color: @link-color;
+}
+
+.one ul {
+	
+	width: 44%;
+	 height: 50px;
+	 font-family: @font-type
+
+}
+
+.one h3  {
+	 
+
+	font-family: @font-type;
+	letter-spacing: 1px;
+	margin-left: 50%;
+	margin-top: -95px;
+	margin-bottom: 15px;
+	color: @link-color
+}
+
+
+.two p {
+	display: flex;
+	margin-left: 50%;
+	font-family: @font-type
+	
+}
+
+.three h4 {
+ 
+	font-family: @font-type;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	margin-top: 200px; 
+	margin-left: -10px;
+	color: @link-color; 
+}
+
+.three ul {
+	 
+	width: 107%;
+	 height: 50px;
+	 margin-right: 50%;
+	 margin-left: -10px; 
+}
+
+footer .footer-content {
+	padding: 20px 0;
+	text-align: center;
+	font-family: @font-type; 
+	margin-top: 28%; 
+	background-color: gray; 
+ }
